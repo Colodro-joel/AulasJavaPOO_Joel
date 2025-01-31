@@ -4,7 +4,7 @@ public class Person {
     String name;
     int age;
     float height;
-    String endereço;
+    String adress;
 
     public void falar(String frase){
         System.out.println(frase);

@@ -6,22 +6,12 @@ public class Person {
     float height;
     String adress;
 
-    public Person(String name) {
+    public Person(String name, int age, float height, String adress) {
         this.name = name;
-    }
-
-    public Person(int age) {
-        this.age = age;
-    }
-
-    public Person(float height) {
-        this.height = height;
-    }
-
-    public Person(float adress) {
+        this.age = int age;
+        this.height = float height;
         this.adress = adress;
     }
-
 
     public void falar(String frase){
         System.out.println(frase);

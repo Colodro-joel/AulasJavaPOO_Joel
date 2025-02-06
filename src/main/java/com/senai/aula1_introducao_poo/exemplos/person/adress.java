@@ -7,23 +7,11 @@ public class adress {
     String cidade;
     String UF;
 
-    public adress(String rua) {
+    public adress(String rua, int numero, String bairro, String cidade, String UF) {
         this.rua = rua;
-    }
-
-    public adress(int numero) {
         this.numero = numero;
-    }
-
-    public adress(String bairro) {
         this.bairro = bairro;
-    }
-
-    public adress(String cidade) {
         this.cidade = cidade;
-    }
-
-    public adress(String UF) {
         this.UF = UF;
     }
 

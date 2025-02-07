@@ -1,13 +1,13 @@
 package com.senai.aula1_introducao_poo.exemplos.person;
 
-public class adress {
+public class Adress {
     String rua;
     int numero;
     String bairro;
     String cidade;
     String UF;
 
-    public adress(String rua, int numero, String bairro, String cidade, String UF) {
+    public Adress(String rua, int numero, String bairro, String cidade, String UF) {
         this.rua = rua;
         this.numero = numero;
         this.bairro = bairro;

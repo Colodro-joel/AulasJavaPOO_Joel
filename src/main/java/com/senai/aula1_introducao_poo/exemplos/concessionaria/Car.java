@@ -5,20 +5,20 @@ public class Car {
     String modelo;
     String cor;
     int ano;
-    int quilometragem;
+    int km;
     double valor;
 
-    public void TesteDriver(){
-        System.out.println("Vrummmm! ,"+modelo+"sendo testado.");
-    }
-
-    public Car(String marca, String modelo, String cor, String ano, String quilometragem, String valor) {
+    public Car(String marca, String modelo, String cor, int ano, int km, double valor) {
         this.marca = marca;
         this.modelo = modelo;
         this.cor = cor;
-        this.ano = int ano;
-        this.quilometragem = int quilometragem;
-        this.valor = double valor;
+        this.ano = ano;
+        this.km = km;
+        this.valor = valor;
+    }
+
+    public void TesteDriver(){
+        System.out.println("Vrummmm! ,"+modelo+"sendo testado.");
     }
 
     public void comprar(String nomeCliente){
@@ -26,7 +26,7 @@ public class Car {
 
     }
 
-    public void valorTabelaFipe(String anoatual){
+    public void valorTabelaFipe(int anoatual){
         int IdadeCarro = anoatual = this.ano;
         double valorComDesvalorizacao = valor;
 
@@ -44,7 +44,7 @@ public class Car {
                 ", modelo='" + modelo + "\'" +
                 ", cor='" + cor + "\'" +
                 ", ano=' " +  ano + "\'" +
-                ", quilometragem=' " + quilometragem + "\'" +
+                ", km=' " + km + "\'" +
                 ", valor=" + valor +
                 ")";
     }

@@ -3,6 +3,8 @@ package com.senai.aula1_introducao_poo.exemplos.person;
 import java.util.Scanner;
 
 public class Main {
+    private static boolean person;
+
     public static void main(String[] args) {
 
         Adress adress1 = new Adress(
@@ -56,6 +58,6 @@ public class Main {
                         dados[7]
                   )
         );
-                System.out.println(person3J);
+                System.out.println(person);
     }
 }

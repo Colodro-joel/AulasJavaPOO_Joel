@@ -56,6 +56,6 @@ public class Main {
                         dados[7]
                   )
         );
-                System.out.println(person3);
+                System.out.println(person3J);
     }
 }

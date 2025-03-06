@@ -22,10 +22,10 @@ public class Student {
     }
 
     public void aprovacao(double grade) {
-        double aprovacao = grade = this.grade;
+        double grade = this.grade;
 
         for (int i = 0; i < grade; i++) {
-            double aprovacao = grade >= 6.0;
+            double grade >= 6.0;
         }
         System.out.println("Parabens! Com a nota "+ aprovacao+" você passou.");
         System.out.println("Que pena! Com a nota "+grade+" você reprovou.");

@@ -9,7 +9,7 @@ public class Main {
 
         //Utilizando métodos públicos para modificar e acessar a váriavel privada
         myCar.setVelocity(100);
-        System.out.println("Velocidade atual: " + myCar).getvelocity());
+        System.out.println("Velocidade atual: " + myCar.getvelocity());
 
         //Testando uma velocidade inválida
         myCar.setvelocity(-20); //Isso mostrará memsagem de erro

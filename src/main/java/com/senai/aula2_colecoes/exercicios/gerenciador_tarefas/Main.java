@@ -27,7 +27,6 @@ public class Main {
 
         }
 
-        Task task1 = new Task("estudar Java", S);
+        Task task1 = new Task("estudar Java", 1);
     }
-
 }

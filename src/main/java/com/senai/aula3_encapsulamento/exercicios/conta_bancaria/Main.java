@@ -3,7 +3,7 @@ package com.senai.aula3_encapsulamento.exercicios.conta_bancaria;
 public class Main {
     public static void main(String[] args) {
         BankAccount bankAccount1 = new BankAccount("Joel" , 2000);
-        BankAccount bankAccount2 = new BankAccount("Eliseu", -15);
+        BankAccount bankAccount2 = new BankAccount("Eliseu", -20);
 
         System.out.println(bankAccount1);
         System.out.println(bankAccount2);
@@ -18,7 +18,10 @@ public class Main {
         bankAccount1.Sacar(10);
         bankAccount2.Sacar(10);
 
+        System.out.println("-------teste transferencia----");
 
+        bankAccount1.transferir(-1020,bankAccount2);
+        bankAccount2.transferir(10,bankAccount1);
 
     }
 }

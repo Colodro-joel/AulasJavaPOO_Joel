@@ -31,22 +31,38 @@ public class BankAccount {
     }
 
     public void Depositar(double valor){
-        if (valor<=saldo){
-            saldo-=valor;
+        if (valor>0){
+            saldo+=valor;
         } else {
-            System.out.println("Saldo insuficiente!");
+            System.out.println("Valor inválido!");
         }
     }
 
-    public void Sacar(double valor){
-        if (valor > 0) {
-            saldo -=valor;
-            System.out.println("sacado com sucesso!");
+    public boolean Sacar(double valor){
+        if (valor <= saldo && valor <0) {
+            saldo-=valor;
+            System.out.println("sacado com sucesso na conta do titular"+titular+"! saldo atual:"+saldo);
+            return true;
         } else if (saldo < 0) {
             System.out.println("Saldo insuficente!");
         }
-
+        return false;
     }
 
+    public void transferir(double valor, BankAccount  destinationAccount){
+        if(this.Sacar(valor)) {
+            destinationAccount.Depositar(valor);
+        } else {
+            System.out.println("Transferencia inválida!");
+        }
+    }
 
+    @Override
+    public String toString() {
+        return "Conta Bancária(" +
+                "titular: " + titular +
+                ", saldo:" + saldo +
+                ")";
+
+    }
 }

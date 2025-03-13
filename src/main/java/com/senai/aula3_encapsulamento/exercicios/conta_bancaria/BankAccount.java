@@ -38,15 +38,14 @@ public class BankAccount {
         }
     }
 
-    public boolean Sacar(double valor){
-        if (valor <= saldo && valor <0) {
-            saldo-=valor;
-            System.out.println("sacado com sucesso na conta do titular"+titular+"! saldo atual:"+saldo);
-            return true;
-        } else if (saldo < 0) {
-            System.out.println("Saldo insuficente!");
+    public void Sacar(double valor){
+        if(valor<=saldo && valor>0){
+            saldo -= valor;
+            System.out.println("Saque realizado com sucesso na conta de de:"+getTitular()+" com o saldo de: R$"+getSaldo());
+            return false;
+        } else {
+            System.out.println("Saque inválido");
         }
-        return false;
     }
 
     public void transferir(double valor, BankAccount  destinationAccount){

@@ -1,4 +1,4 @@
-package com.senai.aula4_herança.exercicios.Sistema_cadastro_funcionários;
+package com.senai.aula4_herança.exemplos.Sistema_cadastro_funcionários;
 
 public class funcionário {
     protected String nome;
@@ -26,6 +26,7 @@ public class funcionário {
     }
 
     public void exibirDados(){
+        super.exibirDados();
         System.out.printf("Nome: %s , Salário: R$%f",nome,salário);
     }
 }

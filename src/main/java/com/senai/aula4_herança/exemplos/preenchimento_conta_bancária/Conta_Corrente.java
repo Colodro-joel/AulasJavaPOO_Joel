@@ -1,4 +1,4 @@
-package com.senai.aula4_herança.exercicios.preenchimento_conta_bancária;
+package com.senai.aula4_herança.exemplos.preenchimento_conta_bancária;
 
 public class Conta_Corrente extends Conta_Bancária {
     private double limite;
@@ -16,11 +16,19 @@ public class Conta_Corrente extends Conta_Bancária {
         this.limite = limite;
     }
 
-    @Override
-    public void Sacar(double valor){
-        if(valor<=saldo && valor>0){
-            saldo -= valor;
-            System.out.println("Saque realizado com sucesso na conta de de:"+getTitular()+" com o saldo de: R$"+getSaldo());
+    public double getsaldo() {
+        return saldo;
+    }
+
+    public double setsaldo(double saldo) {
+        this.saldo = saldo;
+        return saldo;
+    }
+
+    public boolean Sacar(double valor){
+        if(valor <= valor + limite){
+            valor -= valor;
+            System.out.println("Saque realizado com sucesso na conta de de:"+titular+" com o saldo de: R$"+saldo);
             return true;
         } else {
             System.out.println("SAQUE INVALIDO");
@@ -28,3 +36,5 @@ public class Conta_Corrente extends Conta_Bancária {
         }
     }
 }
+
+

@@ -1,4 +1,4 @@
-package com.senai.aula4_herança.exercicios.Sistema_cadastro_funcionários;
+package com.senai.aula4_herança.exemplos.Sistema_cadastro_funcionários;
 
 public class gerente extends funcionário {
     private double bonus;
@@ -21,6 +21,6 @@ public class gerente extends funcionário {
      */
     @Override
     public void exibirDados() {
-        System.out.printf("Nome: %s , Salário: R$%f",nome,salário);
+        System.out.printf("Nome: %s , Salário: R$%f",nome,salário,bonus);
     }
 }

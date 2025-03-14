@@ -12,9 +12,17 @@ public class Carro extends Veiculo{
         super(marca,ano);
     }
 
+    public int getPortas() {
+        return portas;
+    }
+
+    public void setPortas(int portas) {
+        this.portas = portas;
+    }
+
     @Override
-    public void exibirDetalhes() {
-        super.exibirDetalhes();
+    public void exibirdetalhes() {
+        super.exibirdetalhes();
         System.out.println("Portas: ");
     }
 }

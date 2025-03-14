@@ -1,7 +1,7 @@
-package com.senai.aula4_herança.exercicios.preenchimento_conta_bancária;
+package com.senai.aula4_herança.exemplos.preenchimento_conta_bancária;
 
 public class Conta_Bancária {
-    private String titular;
+    protected String titular;
     protected double saldo;
 
     public Conta_Bancária(String titular, double saldo) {
@@ -32,7 +32,8 @@ public class Conta_Bancária {
             System.out.println("Valor inválido!");
         }
     }
-    public void exibirDados() {
+
+    public void exibirsaldo() {
         System.out.printf("Titular: , Saldo: R$%f",titular,saldo);
     }
 }

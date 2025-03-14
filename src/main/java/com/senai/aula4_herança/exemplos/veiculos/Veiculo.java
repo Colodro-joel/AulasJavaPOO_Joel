@@ -24,7 +24,7 @@ package com.senai.aula4_herança.exemplos.veiculos;
             this.ano = ano;
         }
 
-        public void exibirDetalhes(){
+        public void exibirdetalhes(){
             System.out.print("Marca: "+marca+", Ano: "+ano);
         }
     }

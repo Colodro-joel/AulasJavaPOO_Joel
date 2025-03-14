@@ -8,9 +8,17 @@ public class Moto extends Veiculo{
         this.temPartidaElétrica = temPartidaElétrica;
     }
 
+    public boolean isTemPartidaElétrica() {
+        return temPartidaElétrica;
+    }
+
+    public void setTemPartidaElétrica(boolean temPartidaElétrica) {
+        this.temPartidaElétrica = temPartidaElétrica;
+    }
+
     @Override
-    public void exibirDetalhes() {
-        super.exibirDetalhes();
+    public void exibirdetalhes() {
+        super.exibirdetalhes();
         System.out.println("Portas: ");
     }
 }

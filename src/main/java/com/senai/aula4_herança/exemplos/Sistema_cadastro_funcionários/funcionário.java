@@ -26,7 +26,6 @@ public class funcionário {
     }
 
     public void exibirDados(){
-        super.exibirDados();
         System.out.printf("Nome: %s , Salário: R$%f",nome,salário);
     }
 }

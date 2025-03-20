@@ -38,7 +38,7 @@ public class BankAccount {
         }
     }
 
-    public void Sacar(double valor){
+    public boolean Sacar(double valor){
         if(valor<=saldo && valor>0){
             saldo -= valor;
             System.out.println("Saque realizado com sucesso na conta de de:"+getTitular()+" com o saldo de: R$"+getSaldo());
@@ -46,6 +46,7 @@ public class BankAccount {
         } else {
             System.out.println("Saque inválido");
         }
+        return false;
     }
 
     public void transferir(double valor, BankAccount  destinationAccount){

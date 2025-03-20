@@ -17,6 +17,5 @@ public class Main {
         int b = 2;
         System.out.println( product1.equals(product2));
 
-
      }
 }

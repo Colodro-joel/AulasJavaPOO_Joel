@@ -6,7 +6,6 @@ public class Task {
 
     public Task(String name, int status) {
         this.name = name;
-        this.status = status;
     }
 }
 

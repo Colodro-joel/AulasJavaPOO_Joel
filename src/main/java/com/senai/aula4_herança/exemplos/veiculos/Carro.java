@@ -21,7 +21,7 @@ public class Carro extends Veiculo{
     }
 
     @Override
-    public void exibirdetalhes() {
+    public static void exibirdetalhes() {
         super.exibirdetalhes();
         System.out.println("Portas: ");
     }

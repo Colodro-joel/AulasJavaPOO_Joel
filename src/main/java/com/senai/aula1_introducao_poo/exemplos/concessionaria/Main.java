@@ -4,13 +4,7 @@ public class Main {
 
     public static void main(String[] args){
         Car carro1;
-        carro1 = new Car(
-                "Wolkswagem",
-                "Voyage",
-                "Prata",
-                2013,
-                185000,
-                50000);
+        carro1 = new Car();
 
         System.out.println(carro1);
 

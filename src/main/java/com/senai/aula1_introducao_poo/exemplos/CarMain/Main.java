@@ -30,7 +30,7 @@ public class Main {
             double valorinicial = scanner.nextDouble();
             scanner.nextLine();
 
-            Car car = new Car(modelo, fabricante, marca, ano, km, valorinicial);
+            Car car = new Car();
             Carlist.add(car);
 
             Carlist.forEach(System.out::println);

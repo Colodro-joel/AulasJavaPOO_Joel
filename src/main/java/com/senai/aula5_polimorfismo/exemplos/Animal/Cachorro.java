@@ -1,4 +1,4 @@
-package com.senai.aula5_polimorfismo.exemplos.animal;
+package com.senai.aula5_polimorfismo.exemplos.Animal;
 
 
 public class Cachorro extends Animal{

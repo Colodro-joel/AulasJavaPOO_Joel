@@ -1,7 +1,5 @@
 package com.senai.aula1_introducao_poo.exercicios.gerenciamento_alunos;
 
-import java.util.Scanner;
-
 public class Student {
     String name;
     int age;
@@ -17,18 +15,21 @@ public class Student {
         System.out.println("Nome: " + name + ", Idade: " + age + ", Nota: " + grade);
     }
 
-    public void AtualizaNota() {
-
+    public void AtualizaNota(double grade) {
+        this.grade = grade;
     }
 
-    public void aprovacao(double grade) {
-        double grade = this.grade;
+    public boolean aprovacao(double grade) {
+        return grade >= 6;
+    }
 
-        for (int i = 0; i < grade; i++) {
-            double grade >= 6.0;
-        }
-        System.out.println("Parabens! Com a nota "+ aprovacao+" você passou.");
-        System.out.println("Que pena! Com a nota "+grade+" você reprovou.");
+    @Override
+    public String toString() {
+        return "Student{" +
+                "name='" + name + '\'' +
+                ", age=" + age +
+                ", grade=" + grade +
+                '}';
     }
 }
 

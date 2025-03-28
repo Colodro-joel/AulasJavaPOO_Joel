@@ -5,6 +5,7 @@ public class Moto extends Veiculos{
         super(Modelo);
     }
 
+    @Override
     public void realizarManuntencao() {
         System.out.println("Realizar manuntenção da moto"+getModelo());
     }

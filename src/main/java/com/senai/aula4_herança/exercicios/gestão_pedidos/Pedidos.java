@@ -8,4 +8,24 @@ public class Pedidos {
         NumeroPedido = numeroPedido;
         ValorTotal = valorTotal;
     }
+
+    public int getNumeroPedido() {
+        return NumeroPedido;
+    }
+
+    public void setNumeroPedido(int numeroPedido) {
+        NumeroPedido = numeroPedido;
+    }
+
+    public double getValorTotal() {
+        return ValorTotal;
+    }
+
+    public void setValorTotal(double valorTotal) {
+        ValorTotal = valorTotal;
+    }
+
+    public void pedido{
+        System.out.println("Numero do Pedido: "+NumeroPedido", Valor: "+ValorTotal);
+    }
 }

@@ -1,4 +1,4 @@
-package com.senai.aula5_polimorfismo.exemplos.animal;
+package com.senai.aula5_polimorfismo.exemplos.Animal;
 
 public class Gato extends Animal{
     @Override
@@ -7,4 +7,7 @@ public class Gato extends Animal{
     }
 
 
+    public void mia() {
+
+    }
 }

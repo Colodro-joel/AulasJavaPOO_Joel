@@ -5,6 +5,7 @@ public class Carro extends Veiculos{
         super(Modelo);
     }
 
+    @Override
     public void realizarManuntencao() {
         System.out.println("Manuntenção preventiva realizada para o carro"+getModelo());
     }

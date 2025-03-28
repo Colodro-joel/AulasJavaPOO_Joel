@@ -5,6 +5,7 @@ public class Caminhao extends Veiculos {
         super(Modelo);
     }
 
+    @Override
     public void realizarManuntencao(){
         System.out.println("Reparação solicitada para o caminhão"+getModelo());
     }

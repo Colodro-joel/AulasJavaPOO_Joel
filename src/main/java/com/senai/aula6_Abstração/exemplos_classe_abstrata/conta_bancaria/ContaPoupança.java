@@ -7,7 +7,7 @@ public class ContaPoupança extends ContaBancaria{
     }
 
     @Override
-    public void depositar(double valor) {
-        super.depositar(valor);
+    void aplicarTaxaMensal() {
+        saldo=+ saldo*0.05;
     }
 }

@@ -25,7 +25,7 @@ public class Pedidos {
         ValorTotal = valorTotal;
     }
 
-    public void pedido{
-        System.out.println("Numero do Pedido: "+NumeroPedido", Valor: "+ValorTotal);
+    public static void Pedidos(){
+        System.out.println("Numero do Pedido: " +NumeroPedido+ ", Valor: " +ValorTotal);
     }
 }

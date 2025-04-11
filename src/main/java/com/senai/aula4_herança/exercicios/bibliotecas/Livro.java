@@ -1,6 +1,6 @@
 package com.senai.aula4_herança.exercicios.bibliotecas;
 
-public abstract class Livro {
+public class Livro {
     private String Titulo;
     private String Autor;
 

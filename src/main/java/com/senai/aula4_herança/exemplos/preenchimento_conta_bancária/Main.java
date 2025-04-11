@@ -5,20 +5,20 @@ public class Main {
         Conta_Corrente contaCorrente1 = new Conta_Corrente("Joel",200,3000);
         Conta_Poupança contapoupança1 = new Conta_Poupança("Joel", 6000, 10);
 
-        Conta_Poupança.exibirsaldo();
-        Conta_Corrente.saldo();
+        contapoupança1.exibirsaldo();
+        contaCorrente1.exibirsaldo();
 
         System.out.println("-----teste Conta Corrente-----");
-        Conta_Corrente.Sacar(200);
-        Conta_Corrente.Sacar(100);
-        Conta_Corrente.Sacar(10);
+        contaCorrente1.Sacar(10);
+        contaCorrente1.Sacar(15);
+        contaCorrente1.Sacar(20);
 
         System.out.println("-----teste Conta Poupança-----");
-        Conta_Poupança.aplicarrendimento();
+        contapoupança1.aplicarrendimento();
         System.out.println("------------------------------");
 
-        Conta_Corrente.exibirsaldo();
-        Conta_Poupança.exibirsaldo();
+        contaCorrente1.exibirsaldo();
+        contapoupança1.exibirsaldo();
 
 
     }

@@ -18,7 +18,7 @@ public class LivroDigital extends Livro{
 
     @Override
     public void dadoslivro() {
-        System.out.println("Tamanho do Arquivo: ");
+        System.out.println("Tamanho do Arquivo: "+TamanhoArquivo+" MB");
     }
 
 

@@ -1,11 +1,14 @@
-package com.senai.aula4_herança.exercicios.bibliotecas;
+package com.senai.aula4_herança.exercicios.atendimento_médico;
 
 public class Main {
     public static void main(String[] args) {
-        Livro livro1 = new Livro("Biblia","Deus");
-        Livro livro2 = new Livro("Extraordinário", "RJ Palacio");
+        Paciente paciente1 = new Paciente("Joel",20);
+        Paciente paciente2 = new PacienteConvenio("Adelaide",44,50.00);
+        Paciente paciente3 = new PacienteParticular("Cilene", 45,60.00);
 
-        livro1.dadoslivro();
-        livro2.dadoslivro();
+        paciente1.dadospaciente();
+        paciente2.dadospaciente();
+        paciente3.dadospaciente();
+
     }
 }

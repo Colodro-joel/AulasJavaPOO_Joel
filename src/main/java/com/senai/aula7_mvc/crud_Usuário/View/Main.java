@@ -107,15 +107,20 @@ public class Main {
                             if (escolherTipo == 1){
                                 opController.listarOperadores().forEach(System.out::println);
                             } else if (escolherTipo = 2) {
+                                supController.listarSupervisores().forEach(System.out.println);
 
                             }
-
-                    }
-
+                            break;
+                        case 5:
+                            break;
+                        case 6:
+                            break:
+                        default:
+                            System.out.println("Saindo do sistema!!");
+                            break;
+                    } while ();
+                    scanner.close();
             }
-
-        } while (opcao != 7);
-        scanner.close();
+        }
     }
-
 }

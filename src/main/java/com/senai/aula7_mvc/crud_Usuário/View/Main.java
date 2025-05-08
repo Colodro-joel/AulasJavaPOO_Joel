@@ -3,6 +3,7 @@ package com.senai.aula7_mvc.crud_Usuário.View;
 import com.senai.aula7_mvc.crud_Usuário.Controller.OperadorController;
 
 import com.senai.aula7_mvc.crud_Usuário.Controller.SupervisorController;
+import com.senai.aula7_mvc.crud_Usuário.Model.Operador;
 import com.senai.aula7_mvc.crud_Usuário.Model.Supervisor;
 
 import java.util.Scanner;
@@ -32,7 +33,7 @@ public class Main {
             System.out.println("Qual é o tipo de Usuário??");
             System.out.println("1 - Operador");
             System.out.println("2 - Supervisor");
-            int escolherTipo = scanner.NextInt();
+            int escolherTipo = scanner.nextInt();
             scanner.nextLine();
 
             switch(opcao) {
@@ -48,7 +49,7 @@ public class Main {
                         System.out.println("Setor: ");
                         String setor = scanner.nextLine();
                         Operador operador = new Operador(nome, id, setor);
-                        if (operadorController.cadastrarOperador(operador)){
+                        if (opController.cadastrarOperador(operador)){
                             System.out.println("Cadastrado com sucesso!!!");
                         } else {
                             System.out.println("Não foi possivel cadastrar!!!");
@@ -57,7 +58,7 @@ public class Main {
                         String area = scanner.nextLine();
                         Supervisor supervisor = new Supervisor(nome, id, area);
                         supController.cadastrarSupervisor(supervisor);
-                        if (operadorController.cadastrarSupervisor(supervisor)) {
+                        if (opController.cadastrarSupervisor(supervisor)) {
                             System.out.println("Cadastrado com sucesso!!");
                         }else{
                             System.out.println("Não foi possivel cadastrar!!!");
@@ -78,33 +79,34 @@ public class Main {
                     else if (escolherTipo == 2) {
                         supController.deletarSupervisor(id);
                         break;
+
                         case 3:
-                            if(escolherTipo == 1);
-                                opController.listarOperadores().forEach(System.out::println);
-                            else if(escolherTipo == 2);
-                                supController.listarSupervisores().forEach(System.out::println);
+                            if (escolherTipo == 1)
+                            opController.listarOperadores().forEach(System.out::println);
+                            else if (escolherTipo == 2) ;
+                            supController.listarSupervisores().forEach(System.out::println);
 
                             System.out.println("Escolha um usuário para atualizar");
                             id = scanner.nextInt();
                             scanner.nextLine();
                             System.out.println("Atualize as seguintes informações: ");
                             System.out.println("Nome: ");
-                            nome= scanner.nextLine();
+                            nome = scanner.nextLine();
 
                             if (escolherTipo == 1) {
                                 System.out.println("Setor: ");
                                 String area = scanner.nextLine();
-                                opController.atualizarOperador(Operador);
+                                opController.atualizarOperador(operador);
                             } else if {
-                                System.out.println("Area: ");
-                                String area = scanner.nextLine();
-                                Supervisor supervisor = new Supervisor(Nome, Id, area);
-                                supController.atualizarSupervisor(Supervisor);
+                            System.out.println("Area: ");
+                            String area = scanner.nextLine();
+                            Supervisor supervisor = new Supervisor(nome, id, area);
+                            supController.atualizarSupervisor(Supervisor);
                         }
                         System.out.println("Usuário atualizado com sucesso!!");
-                            break;
+                        break;
                         case 4:
-                            if (escolherTipo == 1){
+                            if (escolherTipo == 1) {
                                 opController.listarOperadores().forEach(System.out::println);
                             } else if (escolherTipo = 2) {
                                 supController.listarSupervisores().forEach(System.out.println);
@@ -118,9 +120,10 @@ public class Main {
                         default:
                             System.out.println("Saindo do sistema!!");
                             break;
-                    } while ();
-                    scanner.close();
+
+                    }
             }
-        }
+        } while();
+        scanner.close();
     }
 }
